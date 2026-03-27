@@ -10,7 +10,7 @@ def cosine_similarity(a, b):
     a = np.array(a)
     b = np.array(b)
     
-    dot_product = np.dot(a, b)
+    dot_prod = np.dot(a, b)
     
     norm_a = np.linalg.norm(a)
     norm_b = np.linalg.norm(b)
@@ -18,6 +18,6 @@ def cosine_similarity(a, b):
     if norm_a == 0 or norm_b == 0:
         return 0.0
     
-    return dot_product / (norm_a * norm_b)
+    return dot_prod / (norm_a * norm_b)
 
      
