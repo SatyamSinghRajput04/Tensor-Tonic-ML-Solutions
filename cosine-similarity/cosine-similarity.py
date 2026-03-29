@@ -9,8 +9,12 @@ def cosine_similarity(a, b):
     # pass
     a = np.array(a)
     b = np.array(b)
-    
-    dot_prod = np.dot(a, b)
+    dot_prod = 0
+
+    for i in range(len(a)):
+        
+        dot_prod += a[i] * b[i] 
+    # np.dot(a, b)
     
     # norm_a = np.linalg.norm(a)
     norm_a = np.sqrt(np.sum(a**2))
