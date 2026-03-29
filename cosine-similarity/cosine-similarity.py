@@ -12,7 +12,8 @@ def cosine_similarity(a, b):
     
     dot_prod = np.dot(a, b)
     
-    norm_a = np.linalg.norm(a)
+    # norm_a = np.linalg.norm(a)
+    norm_a = np.sqrt(np.sum(a**2))
     norm_b = np.linalg.norm(b)
         
     if norm_a == 0 or norm_b == 0:
